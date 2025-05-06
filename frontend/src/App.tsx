@@ -1,23 +1,17 @@
 import Navbar from "./components/Navbar";
-import { Routes, Route } from "react-router-dom";
-import View from "./pages/view";
-import Home from "./pages/Home";
-import Rooms from "./pages/Rooms";
-import Restaurant from "./pages/Restaurant";
-import Nearby from "./pages/Nearby";
-import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
+import AppRoutes from "./routes/Routes";
+
 export default function App() {
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <Navbar />
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="/360-walk=through" element={<View />} />
-        <Route path="rooms" element={<Rooms />} />
-        <Route path="restaurant" element={<Restaurant />} />
-        <Route path="/nearby-places" element={<Nearby />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </>
+      <div className="flex-1 ">
+        <AppRoutes />
+      </div>
+      <footer className="bg-red-800 w-full text-center">
+        <Footer />
+      </footer>
+    </div>
   );
 }
