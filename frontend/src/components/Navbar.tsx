@@ -11,7 +11,7 @@ export default function Navbar() {
       <div>
         <Link
           to={"/"}
-          className="font-bold text-[1rem] flex-col flex sm:flex-row sm:text-[1.3rem] md:text-2xl"
+          className="font-bold leading-tight font-serif text-[1rem] flex-col flex sm:flex-row sm:text-[1.3rem] md:text-2xl"
         >
           Hotel Mahendra
           <span className="pl-1 text-red-600">Jalgaon</span>
@@ -91,6 +91,15 @@ export default function Navbar() {
             onClick={() => setToggle(false)}
           >
             Contact
+          </Link>
+        </li>
+        <li>
+          <Link
+            to={"/gallery"}
+            className="hover:text-red-600 active:scale-95 transition duration-100"
+            onClick={() => setToggle(false)}
+          >
+            Gallery
           </Link>
         </li>
       </ul>

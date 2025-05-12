@@ -4,7 +4,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 export default function Footer() {
   return (
-    <div className="w-full relative text-sm flex min-h-auto rounded-t-3xl border-t-2 border-yellow-700 bg-gray-300 flex-col md:justify-evenly font-serif">
+    <div className="w-full relative text-sm flex mt-5 min-h-auto rounded-t-3xl border-t-2 border-yellow-700 bg-gray-300 flex-col md:justify-evenly font-serif">
       <div className="flex relative flex-row justify-around pt-4 md:justify-evenly ">
         <div className="">
           <ul>

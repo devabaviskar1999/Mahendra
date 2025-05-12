@@ -53,7 +53,7 @@ const accordionData = [
   },
   {
     value: "item-3",
-    question: "Can i come with my Girlfriend/Boyfriend?",
+    question: "Can i share room with my Girlfriend/Boyfriend?",
     answer: "Yes. you can but your girlfriend age should be 18+.",
   },
   {

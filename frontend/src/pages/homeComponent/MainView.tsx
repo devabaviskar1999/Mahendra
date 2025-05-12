@@ -7,7 +7,7 @@ export default function MainView() {
   useEffect(() => {
     const interval = setInterval(() => {
       setBgIndex((prev) => (prev === MainViewImage.length - 1 ? 0 : prev + 1));
-    }, 2000); // ⏱️ change every 5 seconds
+    }, 3000); // ⏱️ change every 5 seconds
 
     return () => clearInterval(interval);
   }, []);
