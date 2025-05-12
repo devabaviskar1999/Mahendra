@@ -4,11 +4,15 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@radix-ui/react-accordion";
-
+<a
+  href="https://instagram.com/dev_22kr"
+  target="_blank"
+  rel="noopener noreferrer"
+></a>;
 const Coconut = () => {
   return (
-    <div className="flex flex-col items-center w-full h-auto bg-yellow-900/30 text-black pt-5 pb-10">
-      <div className="mb-6 text-center">
+    <div className="flex flex-col rounded-b-3xl md:rounded-none items-center w-full h-auto bg-yellow-900/30 text-black pt-5 md:pb-10">
+      <div className="mb-4 text-center">
         <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-black ">
           Answers to your Questions
         </h2>
@@ -21,7 +25,7 @@ const Coconut = () => {
               value={value}
               className="border border-white/20 rounded-lg shadow-md transition-shadow duration-300 hover:shadow-xl"
             >
-              <AccordionTrigger className="w-full px-4 py-3 text-left text-lg md:text-xl font-medium transition-all duration-300 hover:underline hover:text-black-300 hover:cursor-pointer">
+              <AccordionTrigger className="tracking-tight  w-full px-4 py-3 text-left text-md md:text-xl font-medium transition-all duration-300 hover:underline hover:text-black-300 hover:cursor-pointer">
                 {question}
               </AccordionTrigger>
               <AccordionContent className="px-4 py-3 text-black text-sm md:text-lg transition-all duration-300 font-serif">
@@ -49,18 +53,20 @@ const accordionData = [
   },
   {
     value: "item-3",
-    question: "Can i come with my Girlfriend?",
+    question: "Can i come with my Girlfriend/Boyfriend?",
     answer: "Yes. you can but your girlfriend age should be 18+.",
   },
   {
     value: "item-4",
-    question: "How much the distance from Bus Stand/ Railway station?",
-    answer: "From Railway station the distance will be 2km and from Bus stand it is around 2.5km. You can get shared auto rikshaws and the reasonable fair from BusStand should be max 30Rs/person and from Railway station it should be around 20Rs/person.",
+    question: "How much is the distance from Bus Stand/ Railway station?",
+    answer:
+      "From Railway station the distance will be 2km and from Bus stand it is around 2.5km. You can get shared auto rickshaws and the reasonable fair from BusStand should be max 30Rs/person and from Railway station it should be around 20Rs/person.",
   },
   {
     value: "item-5",
     question: "Do you have Restaurant and Bar?",
-    answer: "Yes, we do have Restaurant and bar. You can order food and drinks from your room. We have a wide variety of food and drinks available.",
+    answer:
+      "Yes, we do have Restaurant and bar. You can order food and drinks from your room. We have a wide variety of food and drinks available.",
   },
 ];
 

@@ -9,7 +9,7 @@ export default function App() {
       <div className="flex-1 ">
         <AppRoutes />
       </div>
-      <footer className="bg-red-800 w-full text-center">
+      <footer className="">
         <Footer />
       </footer>
     </div>
