@@ -1,10 +1,7 @@
 import Guest from "./Guest";
-// import men from "../../../../public/customerImage/male.jpg";
-// import women1 from "../../../../public/customerImage/women1.jpg";
-// import women2 from "../../../../public/customerImage/women2.jpg";
 export default function GuestsReviews() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 bg-red-100 sm:bg-yellow-900/30  md:px-28 md:pb-10">
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 bg-red-100 sm:bg-yellow-900/30 pb-5 rounded-b-xl  md:px-28 md:pb-10">
       <Guest
         name="Aarav Mehra"
         description="“Great service! The receptionist was kind and efficient. Loved the food—especially the butter paneer and dal fry. Will stay again.”"
@@ -19,7 +16,7 @@ export default function GuestsReviews() {
       />
       <Guest
         name="Ishita Singh"
-        description= "“I stayed here with my partner and felt completely safe. Unlike many places that don't allow unmarried couples, this hotel was respectful and professional. They verified our ID cards at check-in and treated us well throughout. The room was clean, the staff was polite, and I'd definitely recommend it to other couples looking for a safe and decent stay.”"
+        description="“I stayed here with my partner and felt completely safe. Unlike many places that don't allow unmarried couples, this hotel was respectful and professional. They verified our ID cards at check-in and treated us well throughout. The room was clean, the staff was polite, and I'd definitely recommend it to other couples looking for a safe and decent stay.”"
         bgColor="bg-green-200"
         stars={5}
       />

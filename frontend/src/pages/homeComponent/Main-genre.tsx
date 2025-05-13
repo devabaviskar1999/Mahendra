@@ -1,10 +1,10 @@
-import Room from "../../imageStore/MainViewImage/Room.webp"
-import Restaurant from "../../imageStore/MainViewImage/restaurant.avif"
-import AjinthaNew from "../../imageStore/MainViewImage/AjinthaNew.jpg"
+import Room from "../../imageStore/MainViewImage/Room.webp";
+import Restaurant from "../../imageStore/MainViewImage/restaurant.avif";
+import AjinthaNew from "../../imageStore/MainViewImage/AjinthaNew.jpg";
 import Genre from "./Genre";
 const MainGenre = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:pt-5 pt-4 bg-yellow-900/30">
       <Genre
         imgUrl={Room}
         title="Rooms"

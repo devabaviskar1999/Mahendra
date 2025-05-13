@@ -11,9 +11,9 @@ import {
 ></a>;
 const Coconut = () => {
   return (
-    <div className="flex flex-col rounded-b-3xl md:rounded-none items-center w-full h-auto bg-yellow-900/30 text-black pt-5 md:pb-10">
+    <div className="flex flex-col  md:rounded-none items-center w-full h-auto bg-yellow-900/30 text-black pt-5 md:pb-10">
       <div className="mb-4 text-center">
-        <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-black ">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-black md:mb-4 md:mt-4 ">
           Answers to your Questions
         </h2>
       </div>
