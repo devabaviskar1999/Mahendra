@@ -1,10 +1,10 @@
-import entrance from "../../public/MainViewImage/entrance.avif";
-import reception01 from "../../public/MainViewImage/reception01.avif";
-import reception02 from "../../public/MainViewImage/reception02.avif";
-import marriageArea from "../../public/MainViewImage/marriage-area.avif";
-import restaurant from "../../public/MainViewImage/restaurant.avif";
-import receptionToRoomView from "../../public/MainViewImage/reception-to-room-view.jpg";
-import ajintha from "../../public/MainViewImage/ajintha.jpg";
+import entrance from "../imageStore/MainViewImage/entrance.avif";
+import reception01 from "../imageStore/MainViewImage/reception01.avif";
+import reception02 from "../imageStore/MainViewImage/reception02.avif";
+import marriageArea from "../imageStore/MainViewImage/marriage-area.avif";
+import restaurant from "../imageStore/MainViewImage/restaurant.avif";
+import receptionToRoomView from "../imageStore/MainViewImage/reception-to-room-view.jpg";
+import ajintha from "../imageStore/MainViewImage/ajintha.jpg";
 
 type ImageType = {
   imgUrl: string;

@@ -1,4 +1,3 @@
-import "react-loading-skeleton/dist/skeleton.css"; // Import required CSS for skeleton
 import { Link } from "react-router-dom";
 
 interface FirstPropTypes {

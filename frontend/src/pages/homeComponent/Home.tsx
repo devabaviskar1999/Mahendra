@@ -1,4 +1,5 @@
 import Coconut from "./coconut/Coconut";
+import CustomerHeading from "./CustomerHeading";
 import GuestsReviews from "./guest-reviews/GuestsReviews";
 import MainGenre from "./Main-genre";
 import MainView from "./MainView";
@@ -9,7 +10,8 @@ export default function Home() {
       <MainView />
       <Coconut />
       <MainGenre />
-      <GuestsReviews />
+      <CustomerHeading/>
+      <GuestsReviews/>
     </div>
   );
 }

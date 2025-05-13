@@ -1,4 +1,4 @@
-import Room from "../../../public/Room.webp";
+import Room from "../../imageStore/MainViewImage/Room.webp"
 import Genre from "./Genre";
 import { MainViewImage } from "../../store/MainViewImage";
 const MainGenre = () => {
