@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Navbar />
-      <div className="flex-1 ">
+      <div className="flex-1 pt-15 md:pt-17 lg:pt-20">
         <AppRoutes />
       </div>
       <footer className="">

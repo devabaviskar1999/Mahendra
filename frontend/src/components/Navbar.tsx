@@ -6,7 +6,7 @@ export default function Navbar() {
 
   return (
     // 🔧 Set high z-index and background to keep navbar above all content
-    <div className="relative z-50 w-full flex flex-row justify-between items-center p-2 lg:p-2 md:pl-4 sm:pl-3 xl:pl-[7vw] xl:pr-[7vw] border-b-2  bg-white">
+    <div className="fixed top-0 left-0 z-50 w-full bg-white border-b-2 p-2 lg:p-2 md:pl-4 sm:pl-3 xl:pl-[7vw] xl:pr-[7vw] flex justify-between items-center">
       {/* Brand Name */}
       <div>
         <Link
