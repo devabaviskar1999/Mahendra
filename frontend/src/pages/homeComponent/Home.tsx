@@ -8,6 +8,7 @@ import LazyComponentWrapper from "../../LazyComponentWrapper";
 import TopArrow from "./TopArrow";
 import GenreSkeleton from "../../skeleton/GenreSkeleton";
 import GuestSkeleton from "../../skeleton/GuestSkeleton";
+import Offer from "../../offers/Offer";
 export default function Home() {
   return (
     <div className="w-full relative">
@@ -41,6 +42,7 @@ export default function Home() {
         </Suspense>
       </LazyComponentWrapper>
       <TopArrow />
+      <Offer />
     </div>
   );
 }
