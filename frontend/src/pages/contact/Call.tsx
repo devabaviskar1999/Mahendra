@@ -9,7 +9,7 @@ const Call = () => {
       <IoIosCall
         size={55}
         color="blue"
-        className="fixed bg-white rounded-full z-50 right-3 bottom-22 p-1"
+        className="fixed bg-white rounded-full z-50 right-3 bottom-22 p-1 md:hidden"
       />
     </a>
   );

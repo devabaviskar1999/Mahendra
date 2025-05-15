@@ -1,6 +1,6 @@
 import { FaWhatsapp } from "react-icons/fa";
 const Whatsapp = () => {
-  const phoneNumber = "1234567890"; // Replace with your number (no + or spaces)
+  const phoneNumber = " +918087610947"; // Replace with your number (no + or spaces)
   const message =
     "Hello! I would like to book a room or inquire about your hotel services.";
   const encodedMessage = encodeURIComponent(message);
@@ -11,7 +11,7 @@ const Whatsapp = () => {
       <FaWhatsapp
         size={55}
         color="#25D366"
-        className="fixed bg-white  rounded-full z-50 right-3 bottom-6"
+        className="fixed bg-white  rounded-full z-50 right-3 bottom-6 md:hidden"
       />
     </a>
   );
