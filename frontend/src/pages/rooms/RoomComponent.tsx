@@ -39,8 +39,6 @@ export default function RoomComponent({
   }, [isTapped]);
   return (
     <>
-     
-   
       <div className="w-full md:w-4/5 relative rounded-2xl shadow-lg mt-4 lg:mt-6 border-2 p-4 md:p-6 flex flex-col md:flex-row gap-4 md:gap-8 bg-[#fffcf8]">
         {/* Image and Description Section */}
         <div className="w-full md:w-1/2 flex flex-col gap-3 relative">

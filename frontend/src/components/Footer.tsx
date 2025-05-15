@@ -55,7 +55,7 @@ export default function Footer() {
             <FaPhoneAlt className="text-sm" /> +91 257 222 2470
           </p>
           <p className="flex flex-row gap-x-1 items-center">
-            <MdEmail className="text-sm" /> Hotelmahendra@gmail.com
+            <MdEmail className="text-sm" /> hotelmahendra@gmail.com
           </p>
           <p>Address: Ajintha chauck, jalgaon</p>
           <div className="ml-2 lg:ml-0 flex flex-row gap-x-2">
@@ -75,20 +75,20 @@ export default function Footer() {
             </a>
           </div>
         </div>
-      <div className="hidden lg:block mt-6">
-  <div className="w-full h-55  overflow-hidden rounded-2xl shadow">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.748864250867!2d75.5740160112649!3d21.002701680559337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd90f00d1553029%3A0xc4524288e1678c68!2sHotel%20Mahendra!5e0!3m2!1sen!2sin!4v1747204550698!5m2!1sen!2sin"
-      width="100%"
-      height="100%"
-      style={{ border: 0 }}
-      allowFullScreen
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-      title="Google Map"
-    ></iframe>
-  </div>
-</div>
+        <div className="hidden lg:block mt-6">
+          <div className="w-full h-55  overflow-hidden rounded-2xl shadow">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.748864250867!2d75.5740160112649!3d21.002701680559337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd90f00d1553029%3A0xc4524288e1678c68!2sHotel%20Mahendra!5e0!3m2!1sen!2sin!4v1747204550698!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Google Map"
+            ></iframe>
+          </div>
+        </div>
       </div>
       <div className="flex flex-col items-center font-sans pt-2">
         <p>

@@ -20,7 +20,7 @@ export default function Navbar() {
 
       {/* 🔧 Hamburger Button with z-50 so it stays above dropdown menu */}
       <button
-        className="relative z-50 w-8 h-8 flex flex-col justify-between items-center lg:hidden cursor-pointer"
+        className="relative z-50 w-8 h-8 flex flex-col justify-between items-center xl:hidden cursor-pointer"
         onClick={() => setToggle(!toggle)}
         aria-label="Toggle Menu"
       >
@@ -45,8 +45,7 @@ export default function Navbar() {
       <ul
         className={`${
           toggle ? "flex" : "hidden"
-        } absolute top-full left-0 z-40 w-full flex-col items-center justify-center bg-white py-4 gap-4 font-medium 
-        lg:relative lg:flex lg:flex-row lg:items-center lg:justify-start lg:w-fit lg:gap-[2vw] sm:text-lg md:text-lg`}
+        } xl:flex xl:relative xl:flex-row xl:items-center xl:justify-start xl:w-fit xl:gap-[2vw] absolute top-full left-0 z-40 w-full flex-col items-center justify-center bg-white py-4 gap-4 font-medium sm:text-lg md:text-lg`}
       >
         <li>
           <Link
@@ -73,6 +72,15 @@ export default function Navbar() {
             onClick={() => setToggle(false)}
           >
             Restaurant & Bar
+          </Link>
+        </li>
+        <li>
+          <Link
+            to={"/hall"}
+            className="hover:text-red-600 active:scale-95 transition duration-100"
+            onClick={() => setToggle(false)}
+          >
+            Hall
           </Link>
         </li>
         <li>

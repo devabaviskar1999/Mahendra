@@ -9,6 +9,7 @@ const Restaurant = lazy(() => import("../pages/Restaurant"));
 const Nearby = lazy(() => import("../pages/Nearby"));
 const Contact = lazy(() => import("../pages/contact/Contact"));
 const Gallery = lazy(() => import("../pages/Gallery"));
+const Hall = lazy(() => import("../pages/hall/Hall"));
 export default function AppRoutes() {
   return (
     <Routes>
@@ -19,6 +20,7 @@ export default function AppRoutes() {
       <Route path="/nearby-places" element={<Nearby />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/gallery" element={<Gallery />} />
+      <Route path="/hall" element={<Hall />} />
     </Routes>
   );
 }
