@@ -58,9 +58,9 @@ const accordionData = [
   },
   {
     value: "item-4",
-    question: "How much is the distance from Bus Stand/ Railway station?",
+    question: "How much is the distance from Bus Stand/ Railway station/ Airport?",
     answer:
-      "From Railway station the distance will be 2km and from Bus stand it is around 2.5km. You can get shared auto rickshaws and the reasonable fair from BusStand should be max 30Rs/person and from Railway station it should be around 20Rs/person.",
+      "From Railway station the distance will be 2km and from Bus stand it is around 2.5km. You can get shared auto rickshaws and the reasonable fair from BusStand should be max 30Rs/person and from Railway station it should be around 20Rs/person. And from Airport the distance will be around 10km. You can get cab services from the airport and the fair should be around 200Rs.",
   },
   {
     value: "item-5",
