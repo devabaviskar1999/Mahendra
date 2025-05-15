@@ -9,10 +9,12 @@ import TopArrow from "./TopArrow";
 import GenreSkeleton from "../../skeleton/GenreSkeleton";
 import GuestSkeleton from "../../skeleton/GuestSkeleton";
 import Offer from "../../offers/Offer";
+import MainPageHall from "./mainPageHall/MainPageHall";
 export default function Home() {
   return (
     <div className="w-full relative">
       <MainView />
+      <MainPageHall />
       <LazyComponentWrapper>
         <Suspense
           fallback={
