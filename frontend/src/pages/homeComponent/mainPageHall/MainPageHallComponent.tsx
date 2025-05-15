@@ -13,7 +13,7 @@ export default function MainPageHallComponent({
 }: DataType) {
   return (
     <div
-      className={`flex ${flexValue} justify-evenly w-3/4 h-auto border rounded-lg text-white items-center p-2 bg-gray-800`}
+      className={`flex ${flexValue} justify-evenly w-3/4 h-auto border rounded-lg text-white items-center p-2 bg-gray-800 shadow-md shadow-gray-400`}
     >
       <div className="w-2/4 h-full flex flex-col items-center gap-1">
         <img
