@@ -23,7 +23,7 @@ export default function Offer() {
         />
       </div>
       <button
-        className="absolute right-0 top-[-15px] text-red-600 font-extrabold text-3xl md:hover:cursor-pointer md:hover:text-4xl"
+        className="absolute right-0 top-[-15px] text-red-600 font-extrabold text-3xl hover:cursor-pointer lg:hover:text-4xl"
         onClick={() => setToggle(!toggle)}
       >
         x

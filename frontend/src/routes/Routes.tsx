@@ -7,7 +7,7 @@ const View = lazy(() => import("../pages/View"));
 const Rooms = lazy(() => import("../pages/rooms/Rooms"));
 const Restaurant = lazy(() => import("../pages/Restaurant"));
 const Nearby = lazy(() => import("../pages/Nearby"));
-const Contact = lazy(() => import("../pages/Contact"));
+const Contact = lazy(() => import("../pages/contact/Contact"));
 const Gallery = lazy(() => import("../pages/Gallery"));
 export default function AppRoutes() {
   return (

@@ -6,7 +6,7 @@ export default function Navbar() {
 
   return (
     // 🔧 Set high z-index and background to keep navbar above all content
-    <div className="fixed top-0 left-0 z-50 w-full bg-white border-b-2 p-2 lg:p-2 md:pl-4 sm:pl-3 xl:pl-[7vw] xl:pr-[7vw] flex justify-between items-center">
+    <div className="fixed top-0 left-0 z-50 w-full bg-white border-b-2 pl-4 p-2 lg:p-2 md:pl-4 sm:pl-3 xl:pl-[7vw] xl:pr-[7vw] flex justify-between items-center">
       {/* Brand Name */}
       <div>
         <Link
@@ -20,7 +20,7 @@ export default function Navbar() {
 
       {/* 🔧 Hamburger Button with z-50 so it stays above dropdown menu */}
       <button
-        className="relative z-50 w-8 h-8 flex flex-col justify-between items-center lg:hidden"
+        className="relative z-50 w-8 h-8 flex flex-col justify-between items-center lg:hidden cursor-pointer"
         onClick={() => setToggle(!toggle)}
         aria-label="Toggle Menu"
       >
