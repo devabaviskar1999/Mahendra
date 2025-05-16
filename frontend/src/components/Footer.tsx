@@ -2,9 +2,12 @@ import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { useLocation } from "react-router-dom";
 export default function Footer() {
+  const location = useLocation();
+  const isRestaurantPage = location.pathname === "/restaurant-and-bar";
   return (
-    <div className="w-full relative text-sm lg:text-lg flex mt-5 min-h-auto rounded-t-3xl border-t-2 border-yellow-700 bg-gray-300 flex-col md:justify-evenly font-serif">
+    <div className={`w-full relative text-sm lg:text-lg flex mt-5 min-h-auto rounded-t-3xl border-t-2 ${isRestaurantPage ? "border-white bg-black text-white" : "border-yellow-700 bg-gray-300 text-black" } flex-col md:justify-evenly font-serif`}>
       <div className="flex relative flex-row justify-around items-center pt-4 md:justify-evenly border-dashed border-b-2 border-gray-600 pb-2 lg:pb-2 lg:pt-0">
         <div className="">
           <ul>

@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 const Home = lazy(() => import("../pages/homeComponent/Home"));
 const View = lazy(() => import("../pages/View"));
 const Rooms = lazy(() => import("../pages/rooms/Rooms"));
-const Restaurant = lazy(() => import("../pages/Restaurant"));
+const Restaurant = lazy(() => import("../pages/restaurant-bar/RestaurantBar"));
 const Nearby = lazy(() => import("../pages/Nearby"));
 const Contact = lazy(() => import("../pages/contact/Contact"));
 const Gallery = lazy(() => import("../pages/Gallery"));
