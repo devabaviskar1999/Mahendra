@@ -7,7 +7,7 @@ const images = [
   'https://source.unsplash.com/random/1600x900?cocktail',
   'https://source.unsplash.com/random/1600x900?dining',
 ];
-
+//!ADD WHEN USER CLICKED ON THE DOTS THE TIMER SHOULD START AGAIN LIKE FROM THE 1SEC TO 5SEC
 const CarousalRestroBar = () => {
   const [current, setCurrent] = useState(0);
 
