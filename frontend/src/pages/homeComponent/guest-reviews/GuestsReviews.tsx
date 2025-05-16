@@ -1,7 +1,7 @@
 import Guest from "./Guest";
 export default function GuestsReviews() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 bg-red-100 sm:bg-yellow-900/30 pb-5 rounded-b-xl  md:px-28 md:pb-10">
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 bg-rose-400 pb-5 rounded-b-xl  md:px-28 md:pb-10">
       <Guest
         name="Aarav Mehra"
         description="“Great service! The receptionist was kind and efficient. Loved the food—especially the butter paneer and dal fry. Will stay again.”"

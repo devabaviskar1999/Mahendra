@@ -18,7 +18,7 @@ export default function Guest({
       } shadow-md md:shadow-none`}
     >
       <div className="flex items-center gap-3 mb-2">
-        <span className="h-9 w-9 rounded-full flex items-center justify-center font-semibold text-xl border-2 bg-white border-gray-400 text-gray-400">
+        <span className="h-9 w-9 rounded-full flex items-center justify-center font-semibold text-xl border-2 bg-white border-gray-400 text-gray-400">  
           {name ? name.charAt(0).toUpperCase() : "A"}
         </span>
         <div>

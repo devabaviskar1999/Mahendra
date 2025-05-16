@@ -1,8 +1,13 @@
+import { useNavigate } from "react-router-dom";
+
 interface DataType {
   imgUrl: string;
   title: string;
   flexValue: string;
   forList: string[];
+  textColor?: string;
+  bgColor?: string;
+  shadowColor?: string;
 }
 
 export default function MainPageHallComponent({
@@ -10,26 +15,31 @@ export default function MainPageHallComponent({
   title,
   flexValue,
   forList,
+  textColor,
+  bgColor,
+  shadowColor,
 }: DataType) {
   return (
     <div
-      className={`flex ${flexValue} justify-evenly w-3/4 h-auto border rounded-lg text-white items-center p-2 bg-gray-800 shadow-md shadow-gray-400`}
+      className={`flex ${flexValue} justify-evenly w-4/5 h-auto border rounded-lg ${textColor} items-center p-2 ${bgColor} shadow-md ${shadowColor} sm:w-3/4 sm:h-45 hover:shadow-lg transition-all duration-300 ease-in-out hover:cursor-pointer sm:gap-2 md:w-110 md:h-48 lg:w-130
+      lg:h-51
+      relative md:border-2 md:border-black/20`}
     >
-      <div className="w-2/4 h-full flex flex-col items-center gap-1">
+      <div className="  flex flex-col items-center gap-1 sm:gap-1">
         <img
           src={imgUrl}
           alt={imgUrl + " image"}
-          className="h-22 object-cover rounded-md"
+          className="h-22 object-cover rounded-md sm:w-60 sm:h-36 md:h-34 lg:h-36"
         />
         <span className="text-red-500 text-[10px] sm:text-sm md:text-lg">
           Tap to view
         </span>
       </div>
-      <div className="flex flex-col pl-3 ">
-        <h2 className="text-xl font-bold">{title}</h2>
-        <ul className="list-disc text-[12px]">
+      <div className="flex flex-col pl-3 sm:gap-2 items-start">
+        <h2 className="text-xl font-bold sm:text-2xl">{title}</h2>
+        <ul className=" list-disc text-[12px] sm:text-sm md:text-lg leading-tight sm:font-semibold">
           {forList.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li key={index}>{item.split(" ")[1]}</li>
           ))}
         </ul>
       </div>

@@ -14,7 +14,6 @@ export default function Home() {
   return (
     <div className="w-full relative">
       <MainView />
-      <MainPageHall />
       <LazyComponentWrapper>
         <Suspense
           fallback={
@@ -28,6 +27,7 @@ export default function Home() {
           <MainGenre />
         </Suspense>
       </LazyComponentWrapper>
+        <MainPageHall />
       <Coconut />
       <CustomerHeading />
       <LazyComponentWrapper>
