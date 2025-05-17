@@ -10,41 +10,44 @@ import GenreSkeleton from "../../skeleton/GenreSkeleton";
 import GuestSkeleton from "../../skeleton/GuestSkeleton";
 import Offer from "../../offers/Offer";
 import MainPageHall from "./mainPageHall/MainPageHall";
+import ScrollToTop from "../../scrollToTop/ScrollToTop";
 export default function Home() {
   return (
-    <div className="w-full relative">
-      <MainView />
-      <LazyComponentWrapper>
-        <Suspense
-          fallback={
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <GenreSkeleton />
-              <GenreSkeleton />
-              <GenreSkeleton />
-            </div>
-          }
-        >
-          <MainGenre />
-        </Suspense>
-      </LazyComponentWrapper>
+    <ScrollToTop>
+      <div className="w-full relative">
+        <MainView />
+        <LazyComponentWrapper>
+          <Suspense
+            fallback={
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <GenreSkeleton />
+                <GenreSkeleton />
+                <GenreSkeleton />
+              </div>
+            }
+          >
+            <MainGenre />
+          </Suspense>
+        </LazyComponentWrapper>
         <MainPageHall />
-      <Coconut />
-      <CustomerHeading />
-      <LazyComponentWrapper>
-        <Suspense
-          fallback={
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:px-28 md:pb-10">
-              <GuestSkeleton />
-              <GuestSkeleton />
-              <GuestSkeleton />
-            </div>
-          }
-        >
-          <GuestsReviews />
-        </Suspense>
-      </LazyComponentWrapper>
-      <TopArrow />
-      <Offer />
-    </div>
+        <Coconut />
+        <CustomerHeading />
+        <LazyComponentWrapper>
+          <Suspense
+            fallback={
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:px-28 md:pb-10">
+                <GuestSkeleton />
+                <GuestSkeleton />
+                <GuestSkeleton />
+              </div>
+            }
+          >
+            <GuestsReviews />
+          </Suspense>
+        </LazyComponentWrapper>
+        <TopArrow />
+        <Offer />
+      </div>
+    </ScrollToTop>
   );
 }

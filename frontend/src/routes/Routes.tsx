@@ -1,5 +1,7 @@
 import { lazy } from "react";
 import { Routes, Route } from "react-router-dom";
+import RestaurentPage from "../pages/restaurantPage/RestaurentPage";
+import BarPage from "../pages/barPage/BarPage";
 // Lazy loading components
 
 const Home = lazy(() => import("../pages/homeComponent/Home"));
@@ -22,6 +24,11 @@ export default function AppRoutes() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/hall" element={<Hall />} />
+      <Route path="/restaurant" element={<RestaurentPage />} />
+      <Route path="/bar" element={<BarPage />} />
+      <Route path="*" element={<h1 className="text-3xl font-semibold text-black text-center w-full mt-10">Page is not found</h1>} />
+  
+      
     </Routes>
   );
 }

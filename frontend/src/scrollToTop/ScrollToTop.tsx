@@ -11,7 +11,7 @@ const ScrollToTop = ({children}: {
             behavior: "smooth"
         })
     }, [pathname])
-  return <div>
+  return <div className="flex-1">
     {children}
   </div>;
 };
