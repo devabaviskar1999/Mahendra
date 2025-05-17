@@ -6,7 +6,7 @@ interface childType {
 
 function ChildRestaurant({ imgUrl, title }: childType) {
   return (
-    <div className="relative group cursor-pointer rounded-lg overflow-hidden border">
+    <button className="relative group cursor-pointer rounded-lg overflow-hidden border">
       <img
         src={imgUrl}
         alt={imgUrl + " image"}
@@ -19,7 +19,7 @@ function ChildRestaurant({ imgUrl, title }: childType) {
           Click to explore options
         </p>
       </div>
-    </div>
+    </button>
   );
 }
 export default memo(ChildRestaurant);
