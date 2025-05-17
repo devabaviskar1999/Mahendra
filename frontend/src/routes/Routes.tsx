@@ -13,6 +13,7 @@ const Hall = lazy(() => import("../pages/hall/Hall"));
 export default function AppRoutes() {
   return (
     <Routes>
+ 
       <Route index element={<Home />} />
       <Route path="/360-walk-through" element={<View />} />
       <Route path="rooms" element={<Rooms />} />

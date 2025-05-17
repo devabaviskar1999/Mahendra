@@ -8,7 +8,7 @@ export default function KitchenTeam() {
       <img
         src={kichenStaff}
         alt={kichenStaff + "image"}
-        className="object-contain lg:h-130"
+        className="object-contain lg:h-130 rounded-lg border-2 border-white "
       />
     </div>
   );
