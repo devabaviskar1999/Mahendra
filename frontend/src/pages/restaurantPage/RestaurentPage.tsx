@@ -1,4 +1,4 @@
-import  { useEffect, useRef } from 'react';
+import  { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import FoodType from './FoodType';
 const RestaurentPage = () => {
@@ -16,10 +16,10 @@ const RestaurentPage = () => {
   }, [location]);
     return (
         <div className="w-full min-h-screen flex flex-col items-center bg-black text-white text-center">
-       <FoodType id='veg' title='veg' targetId='non-veg'/>
-       <FoodType id='non-veg' title='non-veg' targetId='veg'/>
-       <FoodType id='chinese' title='chinese' targetId='non-veg'/>
-       <FoodType id='fish' title='fish' targetId='veg'/>
+       <FoodType id='veg' title='veg' targetId='chinese' heading='Our signatures Vegetarian Dishes'/>
+       <FoodType id='non-veg' title='non-veg' targetId='fish' heading='For The Meal Loversss'/>
+       <FoodType id='chinese' title='chinese' targetId='veg' heading='Experience Chinese Flavour At Our Table'/>
+       <FoodType id='fish' title='fish' targetId='non-veg' heading='Fresh Fish, Perfectly Prepared'/>
         </div>
     );
 }
