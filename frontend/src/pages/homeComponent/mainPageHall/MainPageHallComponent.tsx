@@ -7,7 +7,6 @@ interface DataType {
   forList: string[];
   textColor?: string;
   bgColor?: string;
-  shadowColor?: string;
 }
 
 export default function MainPageHallComponent({
@@ -17,11 +16,10 @@ export default function MainPageHallComponent({
   forList,
   textColor,
   bgColor,
-  shadowColor,
 }: DataType) {
   return (
     <div
-      className={`flex ${flexValue} justify-evenly w-4/5 h-auto border rounded-lg ${textColor} items-center p-2 ${bgColor} shadow-md ${shadowColor} sm:w-3/4 sm:h-45 hover:shadow-lg transition-all duration-300 ease-in-out hover:cursor-pointer sm:gap-2 md:w-110 md:h-48 lg:w-130
+      className={`flex ${flexValue} justify-evenly w-4/5 h-auto border rounded-lg ${textColor} items-center p-2 ${bgColor} shadow-sm shadow-amber-950 sm:w-3/4 sm:h-45 hover:shadow-lg transition-all duration-300 ease-in-out hover:cursor-pointer sm:gap-2 md:w-110 md:h-48 lg:w-130
       lg:h-51
       relative md:border-2 md:border-black/20`}
     >

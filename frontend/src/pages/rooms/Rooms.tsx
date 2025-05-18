@@ -7,7 +7,7 @@ export default function Rooms() {
   return (
     <ScrollToTop>
       <div
-        className="flex flex-col items-center w-full h-auto mt-0 md:bg-[#f2ebe5]
+        className="flex flex-col items-center w-full h-auto mt-0 bg-[#f2ebe5]
     py-6 md:py-10"
       >
         <h1 className="text-3xl p-1 sm:text-4xl md:text-5xl lg:text-5xl font-semibold ">

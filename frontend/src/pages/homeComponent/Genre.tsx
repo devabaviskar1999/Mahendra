@@ -20,7 +20,7 @@ const navigate = (title: string): string => {
 const Genre = ({ imgUrl, title, description }: FirstPropTypes) => {
   return (
     <Link to={navigate(title)}>
-      <div className="flex relative flex-col items-center justify-center gap-4 p-4 bg-white rounded-xl lg:rounded-3xl shadow-2xl transition-shadow duration-100 delay-50 ease-in-out hover:shadow-[0_30px_70px_rgba(0,0,0,0.45)] hover:cursor-pointer font-sans">
+      <div className="flex relative flex-col items-center justify-center gap-4 p-4 bg-white rounded-xl lg:rounded-3xl shadow-md transition-shadow duration-100 delay-50 ease-in-out hover:shadow-[0_30px_70px_rgba(0,0,0,0.45)] hover:cursor-pointer font-sans">
         <h3 className="text-xl sm:font-bold sm:text-2xl xl:text-3xl font-bold text-center text-gray-800">
           {title}
         </h3>

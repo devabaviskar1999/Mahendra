@@ -27,7 +27,6 @@ export default function MainPageHall() {
           forList={["1 Marriage", "2 Engagement", "3 Fresher Party", "4 Event"]}
           textColor="text-black"
           bgColor="bg-amber-100"
-          shadowColor="shadow-amber-200"
         />
       </div>
 
@@ -41,7 +40,6 @@ export default function MainPageHall() {
           forList={["1 Meeting", "2 Birthday", "3 Anniversary", "4 Party"]}
           textColor="text-black"
           bgColor="bg-orange-200"
-          shadowColor="shadow-orange-200"
         />
       </div>
 
@@ -54,7 +52,6 @@ export default function MainPageHall() {
           forList={["1 Engagement", "2 Meeting", "3 Event", "4 Fresher Party"]}
           textColor="text-black"
           bgColor="bg-pink-200"
-          shadowColor="shadow-pink-200"
         />
       </div>
     </div>
