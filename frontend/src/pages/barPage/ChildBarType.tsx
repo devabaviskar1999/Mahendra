@@ -1,12 +1,6 @@
 import React from "react";
 import QuantityTable from "./QuantityTable";
 
-
-interface RatingPropsType {
-  rating?: number;
-  reviews?: number;
-}
-
 interface QtyRate {
   qty: string;
   rate: number;
@@ -18,9 +12,11 @@ interface FoodTypeProps {
   qtyRate: QtyRate[];
 }
 
-type CombinedProps = RatingPropsType & FoodTypeProps;
-
-const ChildBarType: React.FC<CombinedProps> = ({ imgUrl, itemName, qtyRate }) => {
+const ChildBarType: React.FC<FoodTypeProps> = ({
+  imgUrl,
+  itemName,
+  qtyRate,
+}) => {
   return (
     <div className="w-full flex flex-col md:flex-row justify-between items-center gap-6 p-4 border-b border-gray-700">
       {/* Image Section */}
@@ -40,6 +36,5 @@ const ChildBarType: React.FC<CombinedProps> = ({ imgUrl, itemName, qtyRate }) =>
     </div>
   );
 };
-
 
 export default ChildBarType;

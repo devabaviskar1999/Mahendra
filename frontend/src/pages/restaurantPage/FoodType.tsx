@@ -35,7 +35,7 @@ const FoodType = ({ title, id, targetId, heading }: FoodTypeProps) => {
       setData(Veg);
     }
   }, []);
- console.log("data", data);
+  console.log("data", data);
   const handleScroll = (target: string) => {
     const el = document.getElementById(target);
     if (el) {

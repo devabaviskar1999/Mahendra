@@ -1,16 +1,25 @@
 import ChildRestaurant from "./ChildRestaurant";
-import chineseDish from "../../imageStore/restro-bar/food-dishes/chineseDish.jpg";
-import vegDish from "../../imageStore/restro-bar/food-dishes/vegDish.jpg";
-import nonVegDish from "../../imageStore/restro-bar/food-dishes/nonVegDish.jpg";
-import fishDish from "../../imageStore/restro-bar/food-dishes/fishDish.jpg";
+
 import { memo } from "react";
 function Restaurant() {
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-2">
-      <ChildRestaurant imgUrl={vegDish} title="Veg" />
-      <ChildRestaurant imgUrl={nonVegDish} title="Non-veg" />
-      <ChildRestaurant imgUrl={chineseDish} title="Chinese" />
-      <ChildRestaurant imgUrl={fishDish} title="Fish" />
+      <ChildRestaurant
+        imgUrl="https://res.cloudinary.com/dvc4zb2ha/image/upload/v1747670128/veg_cvvqvi.jpg"
+        title="Veg"
+      />
+      <ChildRestaurant
+        imgUrl="https://res.cloudinary.com/dvc4zb2ha/image/upload/v1747670110/non-veg_t03dfe.jpg"
+        title="Non-veg"
+      />
+      <ChildRestaurant
+        imgUrl="https://res.cloudinary.com/dvc4zb2ha/image/upload/v1747670110/chinese_puh9hd.jpg"
+        title="Chinese"
+      />
+      <ChildRestaurant
+        imgUrl="https://res.cloudinary.com/dvc4zb2ha/image/upload/v1747670110/fish_pxxqsb.jpg"
+        title="Fish"
+      />
     </div>
   );
 }
