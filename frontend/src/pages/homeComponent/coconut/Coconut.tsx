@@ -48,22 +48,29 @@ const accordionData = [
   },
   {
     value: "item-2",
+    question: "Do you have a hall available for events or functions?",
+    answer:
+      "Yes, we have a spacious and well-equipped hall suitable for weddings, parties, meetings, and other special occasions. You can contact us for booking details and customized arrangements.",
+  },
+  {
+    value: "item-3",
     question: "What is the checkout time?",
     answer: "24hrs from checking time.",
   },
   {
-    value: "item-3",
+    value: "item-4",
     question: "Can i share room with my Girlfriend/Boyfriend?",
     answer: "Yes. you can but your girlfriend age should be 18+.",
   },
   {
-    value: "item-4",
-    question: "How much is the distance from Bus Stand/ Railway station/ Airport?",
+    value: "item-5",
+    question:
+      "How much is the distance from Bus Stand/ Railway station/ Airport?",
     answer:
       "From Railway station the distance will be 2km and from Bus stand it is around 2.5km. You can get shared auto rickshaws and the reasonable fair from BusStand should be max 30Rs/person and from Railway station it should be around 20Rs/person. And from Airport the distance will be around 10km. You can get cab services from the airport and the fair should be around 200Rs.",
   },
   {
-    value: "item-5",
+    value: "item-6",
     question: "Do you have Restaurant and Bar?",
     answer:
       "Yes, we do have Restaurant and bar. You can order food and drinks from your room. We have a wide variety of food and drinks available.",

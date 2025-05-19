@@ -15,7 +15,7 @@ const RestaurentPage = () => {
     }
   }, [location]);
     return (
-        <div className="w-full min-h-screen flex flex-col items-center bg-black text-white text-center">
+        <div className="w-full min-h-screen flex flex-col items-center bg-black text-white text-center ">
        <FoodType id='veg' title='veg' targetId='chinese' heading='Our signatures Vegetarian Dishes'/>
        <FoodType id='non-veg' title='non-veg' targetId='fish' heading='For The Meal Loversss'/>
        <FoodType id='chinese' title='chinese' targetId='veg' heading='Experience Chinese Flavour At Our Table'/>

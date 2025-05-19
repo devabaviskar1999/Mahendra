@@ -7,7 +7,7 @@ interface RatingPropsType {
 
 interface FoodTypeProps {
   imgUrl: string;
-  title: string;
+  itemName: string;
   qty: string;
   rate: string;
   ingredients: string;
@@ -18,7 +18,7 @@ type CombinedProps = RatingPropsType & FoodTypeProps;
 
 const ChildFoodType: React.FC<CombinedProps> = ({
   imgUrl,
-  title,
+  itemName,
   qty,
   rate,
   ingredients,
@@ -29,11 +29,11 @@ const ChildFoodType: React.FC<CombinedProps> = ({
   return (
     <div className="w-full h-auto flex flex-col md:flex-row md:justify-around lg:gap-4 gap-2 items-center bg-black text-white text-center p-4 border-b border-gray-700">
       <div className="w-full md:w-1/2 flex justify-center">
-        <img src={imgUrl} alt={title} className="w-64 h-64 object-cover rounded-lg shadow-lg" />
+        <img src={imgUrl} alt={itemName} className="w-64 h-64 object-cover rounded-lg shadow-lg" />
       </div>
 
       <div className="w-full md:w-1/2 flex flex-col items-start gap-2 text-left">
-        <h2 className="text-2xl font-semibold">{title}</h2>
+        <h2 className="text-2xl font-semibold">{itemName}</h2>
         <p className="text-sm text-gray-300">Qty: {qty}</p>
         <p className="text-sm text-gray-300">Price: ₹{rate}</p>
         <p className="text-sm text-gray-300">Ingredients: {ingredients}</p>

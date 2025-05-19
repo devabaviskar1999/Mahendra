@@ -1,14 +1,41 @@
-  import ChildFoodType from "./ChildFoodType";
+import { useEffect, useState } from "react";
+import ChildFoodType from "./ChildFoodType";
+import Fish from "./Fish";
+import Chinese from "./Chinese";
+import NonVeg from "./NonVeg";
+import Veg from "./Veg";
 
-  interface FoodTypeProps {
-    heading: string;
-    title: string;
-    description?: string;
-    id: string;
-    targetId: string;
-  }
-  
-  const  FoodType = ({ title, description, id , targetId, heading }: FoodTypeProps) => {
+interface FoodTypeProps {
+  heading: string;
+  title: string;
+  id: string;
+  targetId: string;
+}
+interface FoodDataType {
+  imgUrl: string;
+  itemName: string;
+  qty: string;
+  rate: string;
+  ingredients: string;
+  description: string;
+  rating: number;
+  reviews: number;
+}
+
+const FoodType = ({ title, id, targetId, heading }: FoodTypeProps) => {
+  const [data, setData] = useState<FoodDataType[]>([]);
+  useEffect(() => {
+    if (title === "fish") {
+      setData(Fish);
+    } else if (title === "chinese") {
+      setData(Chinese);
+    } else if (title === "non-veg") {
+      setData(NonVeg);
+    } else {
+      setData(Veg);
+    }
+  }, []);
+ console.log("data", data);
   const handleScroll = (target: string) => {
     const el = document.getElementById(target);
     if (el) {
@@ -16,35 +43,28 @@
     }
   };
 
-
   return (
-    <div id={id} className="w-full min-h-screen scroll-mt-16 lg:scroll-mt-24 flex flex-col items-center bg-black text-white text-center p-2 lg:p-4">
-      <h1 className="text-3xl font-bold mb-6">
-     {`${heading}(${title})`}
-      </h1>
+    <div
+      id={id}
+      className="w-full min-h-screen scroll-mt-16 lg:scroll-mt-24 flex flex-col items-center bg-black text-white text-center p-2 lg:p-4"
+    >
+      <h1 className="text-3xl font-bold mb-6">{`${heading}(${title})`}</h1>
 
       {/* Add example ChildFoodType entries */}
-      <ChildFoodType
-        imgUrl="https://source.unsplash.com/300x300/?food,veg"
-        title="Paneer Butter Masala"
-        qty="1 Plate"
-        rate="199"
-        ingredients="Paneer, Tomato, Butter, Cream"
-        description="Rich and creamy North Indian curry with fresh paneer."
-        rating={4.6}
-        reviews={500}
-      />
 
-      <ChildFoodType
-        imgUrl="https://source.unsplash.com/300x300/?food,noodles"
-        title="Schezwan Noodles"
-        qty="1 Bowl"
-        rate="149"
-        ingredients="Noodles, Schezwan Sauce, Veggies"
-        description="Spicy and tangy noodles tossed in Schezwan sauce."
-        rating={4.3}
-        reviews={642}
-      />
+      {data.map((item, index) => (
+        <ChildFoodType
+          key={index}
+          imgUrl={item.imgUrl}
+          itemName={item.itemName}
+          qty={item.qty}
+          rate={item.rate}
+          ingredients={item.ingredients}
+          description={item.description}
+          rating={item.rating}
+          reviews={item.reviews}
+        />
+      ))}
 
       <button
         onClick={() => handleScroll(targetId)}
