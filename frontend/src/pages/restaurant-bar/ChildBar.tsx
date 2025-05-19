@@ -1,13 +1,20 @@
 import { memo } from "react";
-
+import { useNavigate } from "react-router-dom";
 interface childType {
   imgUrl: string;
   title: string;
 }
 
 function ChildBar({ imgUrl, title }: childType) {
+    const navigate = useNavigate();
+  const ScrollToAnotherSectionId = (title: string):void => {
+    const sectionId = title.toLowerCase().replace(/\s+/g, "-");
+    console.log(sectionId);
+       navigate(`/bar#${sectionId}`);
+  };
   return (
-    <div className="relative group cursor-pointer rounded-lg overflow-hidden border">
+    <div className="relative group cursor-pointer rounded-lg overflow-hidden border"
+       onClick={() => ScrollToAnotherSectionId(title)}>
       {/* Image */}
       <img
         src={imgUrl}
