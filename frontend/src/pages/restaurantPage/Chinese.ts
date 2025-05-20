@@ -1,6 +1,6 @@
 const ChineseData = [
   {
-    imgUrl: "img",
+    imgUrl: "https://i.ibb.co/g1rBJk2/veg-manchurian.jpg",
     itemName: "Veg Manchurian",
     qty: "1 Bowl",
     rate: "189",
@@ -10,7 +10,7 @@ const ChineseData = [
     reviews: 2100,
   },
   {
-    imgUrl: "img",
+    imgUrl: "https://i.ibb.co/6R1W5GNp/soyabean-chilly.jpg",
     itemName: "SoyaBean Chilli",
     qty: "1 Bowl",
     rate: "179",
@@ -20,7 +20,7 @@ const ChineseData = [
     reviews: 1600,
   },
   {
-    imgUrl: "img",
+    imgUrl: "https://i.ibb.co/HLC8jSpZ/chicken-hakka-noodles.jpg",
     itemName: "Chicken Hakka Noodles",
     qty: "1 Plate",
     rate: "219",
@@ -30,7 +30,7 @@ const ChineseData = [
     reviews: 2400,
   },
   {
-    imgUrl: "img",
+    imgUrl: "https://i.ibb.co/Gjhv9jM/chilli-chicken.jpg",
     itemName: "Chilli Chicken",
     qty: "1 Bowl",
     rate: "229",

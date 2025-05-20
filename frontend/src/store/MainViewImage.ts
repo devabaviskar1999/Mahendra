@@ -1,43 +1,35 @@
-import reception01 from "../imageStore/MainViewImage/reception01.avif";
-import marriageArea from "../imageStore/MainViewImage/marriage-area.avif";
-import restaurant from "../imageStore/MainViewImage/restaurant.avif";
-import receptionToRoomView from "../imageStore/MainViewImage/reception-to-room-view.jpg";
-import AjinthaNew from "../imageStore/MainViewImage/AjinthaNew.jpg";
-import Drinks2 from "../imageStore/MainViewImage/Drinks2.jpg";
-import Drinks from "../imageStore/MainViewImage/Drinks.jpg";
-
 type ImageType = {
   imgUrl: string;
   alt: string;
 };
 export const MainViewImage: ImageType[] = [
   {
-    imgUrl: reception01,
+    imgUrl: "https://i.ibb.co/7xvCJRTY/reception01.jpg",
     alt: "Hotel mahendra jalgaon reception01",
   },
-{
-  imgUrl: Drinks,
-  alt: "Drinks image",
-},
   {
-    imgUrl: restaurant,
+    imgUrl: "https://ibb.co/vCYm9ZM3",
+    alt: "Drinks image",
+  },
+  {
+    imgUrl: "https://i.ibb.co/sdkMrH3S/restaurant.jpg",
     alt: "Hotel mahendra jalgaon restaurant",
   },
   {
-    imgUrl: Drinks2,
+    imgUrl: "https://i.ibb.co/TDLRymN4/Drinks2.jpg",
     alt: "Drinks image",
   },
 
   {
-    imgUrl: marriageArea,
+    imgUrl: "https://i.ibb.co/JRVKH5mZ/marriage-area.jpg",
     alt: "Hotel mahendra jalgaon marriage area",
   },
   {
-    imgUrl: receptionToRoomView,
+    imgUrl: "https://i.ibb.co/8nyVzZMD/reception-to-room-view.jpg",
     alt: "Hotel mahendra jalgaon room view from reception",
   },
   {
-    imgUrl: AjinthaNew,
+    imgUrl: "https://i.ibb.co/KzmkLQ6d/Ajintha-New.jpg",
     alt: "nearby place image",
   },
 ];

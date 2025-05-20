@@ -9,7 +9,7 @@ const vegData = [
     description:
       "A rich and creamy tomato-based curry with soft paneer cubes, flavored with butter and aromatic spices.",
     rating: 4.5,
-    reviews: 1200,
+    reviews: 1195,
   },
   {
     imgUrl: "https://ik.imagekit.io/hotelmahendra/dal%20makhani.jpg?updatedAt=1747722848223",
@@ -20,7 +20,7 @@ const vegData = [
     description:
       "A slow-cooked lentil dish made with black lentils and kidney beans in a buttery, creamy gravy.",
     rating: 4.4,
-    reviews: 980,
+    reviews: 120,
   },
   {
     imgUrl: "https://ik.imagekit.io/hotelmahendra/paneer%20butter%20masala.jpg?updatedAt=1747725101857",
@@ -31,10 +31,10 @@ const vegData = [
     description:
       "Fresh spinach puree cooked with tender paneer cubes and mild spices for a healthy, flavorful dish.",
     rating: 4.3,
-    reviews: 870,
+    reviews: 750,
   },
   {
-    imgUrl: "img",
+    imgUrl: "https://i.ibb.co/s9L59L9G/veg-biryani.jpg",
     itemName: "Veg Biryani",
     qty: "1 Bowl",
     rate: "209",
@@ -42,7 +42,7 @@ const vegData = [
     description:
       "Fragrant basmati rice cooked with assorted vegetables and aromatic spices, served with raita.",
     rating: 4.6,
-    reviews: 1500,
+    reviews: 184,
   },
 ];
 

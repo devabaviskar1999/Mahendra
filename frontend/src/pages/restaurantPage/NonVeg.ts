@@ -1,6 +1,6 @@
 const nonVegData = [
   {
-    imgUrl: "img",
+    imgUrl: "https://i.ibb.co/7JDhrrY7/chicken-alishan.jpg",
     itemName: "Chicken Alishan",
     qty: "1 Bowl",
     rate: "239",
@@ -8,10 +8,10 @@ const nonVegData = [
     description:
       "A royal-style chicken curry infused with creamy cashew paste and saffron, offering a rich and luxurious taste.",
     rating: 4.4,
-    reviews: 1600,
+    reviews: 474,
   },
   {
-    imgUrl: "img",
+    imgUrl: "https://i.ibb.co/8p1DZJ2/butter-chicken.jpg",
     itemName: "Butter Chicken",
     qty: "1 Bowl",
     rate: "249",
@@ -19,10 +19,10 @@ const nonVegData = [
     description:
       "A rich and creamy tomato-based curry with tender grilled chicken pieces, flavored with butter and aromatic spices.",
     rating: 4.7,
-    reviews: 2300,
+    reviews: 860,
   },
   {
-    imgUrl: "img",
+    imgUrl: "https://i.ibb.co/ZCkYVzt/chicken-biryani.jpg",
     itemName: "Chicken Biryani",
     qty: "1 Bowl",
     rate: "229",
@@ -30,10 +30,10 @@ const nonVegData = [
     description:
       "Aromatic basmati rice layered with spiced chicken, slow-cooked with saffron and garnished with fried onions.",
     rating: 4.6,
-    reviews: 3100,
+    reviews: 375,
   },
   {
-    imgUrl: "img",
+    imgUrl: "https://i.ibb.co/dsKrN46D/mutton-rogan-josh.jpg",
     itemName: "Mutton Rogan Josh",
     qty: "1 Bowl",
     rate: "269",
@@ -41,7 +41,7 @@ const nonVegData = [
     description:
       "A Kashmiri specialty made with tender mutton pieces cooked in a rich, spiced yogurt-based gravy.",
     rating: 4.5,
-    reviews: 1800,
+    reviews: 990,
   },
 ];
 

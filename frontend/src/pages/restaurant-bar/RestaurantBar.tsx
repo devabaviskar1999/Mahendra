@@ -11,7 +11,7 @@ const KitchenTeam = lazy(() => import("././kitchenTeam/KitchenTeam"));
 export default function Restaurant() {
   return (
     <ScrollToTop>
-      <div className="w-full min-h-screen flex flex-col items-center bg-black text-white text-center">
+      <div className="w-full min-h-screen flex flex-col items-center bg-black text-white text-center mb-[-20px] ">
         <CarousalRestroBar />
 
         <h1 className="text-3xl md:text-4xl font-semibold p-2 lg:p-3 lg:text-5xl border-b w-full">

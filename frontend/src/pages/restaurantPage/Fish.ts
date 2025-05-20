@@ -1,6 +1,6 @@
 const FishData = [
   {
-    imgUrl: "img",
+    imgUrl: "https://i.ibb.co/wNFTd4Wy/fish-curry.jpg",
     itemName: "Fish Curry",
     qty: "1 Bowl",
     rate: "249",
@@ -8,10 +8,10 @@ const FishData = [
     description:
       "Traditional Indian fish curry made with tangy tamarind and aromatic spices, served hot with rice.",
     rating: 4.6,
-    reviews: 1900,
+    reviews: 135,
   },
   {
-    imgUrl: "img",
+    imgUrl: "https://i.ibb.co/N67V2Qw0/fish-fry.jpg",
     itemName: "Fish Fry",
     qty: "1 Plate",
     rate: "229",
@@ -19,7 +19,7 @@ const FishData = [
     description:
       "Crispy and spicy shallow-fried fish fillets marinated in a flavorful blend of spices.",
     rating: 4.5,
-    reviews: 1700,
+    reviews: 273,
   },
 ];
 

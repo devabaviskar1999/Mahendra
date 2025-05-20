@@ -18,7 +18,7 @@ const BarPage = () => {
   }, [location]);
 
   return (
-    <div className="w-full min-h-screen flex flex-col items-center bg-black text-white overflow-x-hidden">
+    <div className="w-full min-h-screen flex flex-col items-center bg-black text-white overflow-x-hidden mb-[-20px]">
       <BarType id="scotch" title="scotch" targetId="beer" />
       <BarType id="rum" title="rum" targetId="vodka" />
       <BarType id="beer" title="beer" targetId="scotch" />

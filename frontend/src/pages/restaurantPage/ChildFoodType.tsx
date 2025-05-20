@@ -27,15 +27,18 @@ const ChildFoodType: React.FC<CombinedProps> = ({
   reviews,
 }) => {
   return (
-    <div className="w-full h-auto flex flex-col md:flex-row md:justify-around lg:gap-4 gap-2 items-center bg-black text-white text-center p-4 border-b border-gray-700">
+    <div className="w-full h-auto flex flex-col md:flex-row md:justify-around lg:gap-4 gap-2 items-center bg-black text-white text-center p-4 border-b-2
+    border-gray-400
+    
+    lg:border-gray-800">
       <div className="w-full md:w-1/2 flex justify-center">
         <img src={imgUrl} alt={itemName} className="w-85 h-60 lg:w-100 lg:h-64 object-cover rounded-lg shadow-lg" />
       </div>
 
       <div className="w-full md:w-1/2 flex flex-col items-start gap-2 text-left">
         <h2 className="text-2xl font-semibold">{itemName}</h2>
-        <p className="text-sm text-gray-300">Qty: {qty}</p>
-        <p className="text-sm text-gray-300">Price: ₹{rate}</p>
+        <p className="text-sm text-white font-semibold">Qty: {qty}</p>
+        <p className="text-sm text-white font-semibold">Price: ₹{rate}</p>
         <p className="text-sm text-gray-300">Ingredients: {ingredients}</p>
         <p className="text-sm text-gray-300">{description}</p>
         

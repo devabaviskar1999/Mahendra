@@ -1,2 +1,0 @@
-const pannerCheesecottage = "https://res.cloudinary.com/dmfsso5kf/image/upload/v1747720945/panner_cheese_cottage_tupevi.jpg"
-const pannerButterMasala = "https://res.cloudinary.com/dmfsso5kf/image/upload/v1747721157/paneer_butter_masala_waoprq.jpg"

@@ -16,7 +16,7 @@ const RestaurentPage = () => {
     }
   }, [location]);
   return (
-    <div className="w-full min-h-screen flex flex-col items-center bg-black text-white text-center ">
+    <div className="w-full min-h-screen flex flex-col items-center bg-black text-white text-center mb-[-20px]">
       <FoodType
         id="veg"
         title="veg"
