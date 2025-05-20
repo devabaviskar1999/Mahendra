@@ -1,5 +1,4 @@
 import MainPageHallComponent from "./MainPageHallComponent";
-import marriageHall from "../../../imageStore/MainViewImage/marriage-area.avif";
 // !md:w-200
 export default function MainPageHall() {
   return (
@@ -21,7 +20,7 @@ export default function MainPageHall() {
 
       <div className="w-full flex justify-start pl-4">
         <MainPageHallComponent
-          imgUrl={marriageHall}
+          imgUrl="https://i.ibb.co/39ztL0yQ/hall.jpg"
           title="Hall-01"
           flexValue="flex-row"
           forList={["1 Marriage", "2 Engagement", "3 Fresher Party", "4 Event"]}
@@ -34,7 +33,7 @@ export default function MainPageHall() {
       <div className="w-full flex justify-end pr-4">
         {/* 👈 shifted right */}
         <MainPageHallComponent
-          imgUrl={marriageHall}
+          imgUrl="https://i.ibb.co/39ztL0yQ/hall.jpg"
           title="Hall-02"
           flexValue="flex-row-reverse"
           forList={["1 Meeting", "2 Birthday", "3 Anniversary", "4 Party"]}
@@ -46,7 +45,7 @@ export default function MainPageHall() {
       {/* Hall-03: Centered */}
       <div className="w-full flex justify-start pl-4">
         <MainPageHallComponent
-          imgUrl={marriageHall}
+          imgUrl="https://i.ibb.co/39ztL0yQ/hall.jpg"
           title="Hall-03"
           flexValue="flex-row"
           forList={["1 Engagement", "2 Meeting", "3 Event", "4 Fresher Party"]}

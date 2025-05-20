@@ -1,9 +1,9 @@
 import RoomComponent from "./RoomComponent";
-import Room from "../../imageStore/MainViewImage/Room.webp";
-import DoubleBed from "../../imageStore/Rooms/Double-bed.jpg";
-import ThirdRoom from "../../imageStore/Rooms/Third room.jpg";
+
 import ScrollToTop from "../../scrollToTop/ScrollToTop";
 export default function Rooms() {
+  const Room = "https://i.ibb.co/k66sty48/room.jpg";
+  const ThirdRoom = "https://i.ibb.co/wNJ5LB0Z/Third-room.jpg";
   return (
     <ScrollToTop>
       <div
@@ -29,7 +29,7 @@ So the layout shifts mid-animation, making it feel like it"s "stuck" or stutteri
           bedType="King Size Bed"
         />
         <RoomComponent
-          Img={DoubleBed}
+          Img="https://i.ibb.co/FkH9fLhb/Double-bed.jpg"
           category="Ac Mini Suite"
           rate={2600}
           description='The image is still loading while the motion.div is animating in.
