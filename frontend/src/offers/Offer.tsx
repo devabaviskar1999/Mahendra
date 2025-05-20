@@ -2,7 +2,7 @@ import { useState } from "react";
 import Drinks from "../imageStore/MainViewImage/Drinks.jpg";
 export default function Offer() {
   const [toggle, setToggle] = useState<boolean>(false);
-
+  
   return (
     <div
       className={`fixed z-50 font-sans ${

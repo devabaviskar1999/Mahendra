@@ -20,8 +20,8 @@ export default function Rooms() {
         </h2>
         <RoomComponent
           Img={Room}
-          category="Executive Deluxe"
-          rate={2000}
+          category="Ac Suite"
+          rate={4200}
           description='The image is still loading while the motion.div is animating in.
 So the layout shifts mid-animation, making it feel like it"s "stuck" or stuttering — especially because the image has no defined height/width upfront.'
           reviewCount={135}
@@ -30,8 +30,8 @@ So the layout shifts mid-animation, making it feel like it"s "stuck" or stutteri
         />
         <RoomComponent
           Img={DoubleBed}
-          category="Super Deluxe"
-          rate={2000}
+          category="Ac Mini Suite"
+          rate={2600}
           description='The image is still loading while the motion.div is animating in.
 So the layout shifts mid-animation, making it feel like it"s "stuck" or stuttering — especially because the image has no defined height/width upfront.'
           reviewCount={73}
@@ -40,7 +40,7 @@ So the layout shifts mid-animation, making it feel like it"s "stuck" or stutteri
         />
         <RoomComponent
           Img={ThirdRoom}
-          category="Family Deluxe"
+          category="Ac Super Deluxe"
           rate={2000}
           description='The image is still loading while the motion.div is animating in.
 So the layout shifts mid-animation, making it feel like it"s "stuck" or stuttering — especially because the image has no defined height/width upfront.'
@@ -50,8 +50,8 @@ So the layout shifts mid-animation, making it feel like it"s "stuck" or stutteri
         />
         <RoomComponent
           Img={ThirdRoom}
-          category="Family Deluxe"
-          rate={2000}
+          category="Ac Deluxe"
+          rate={1350}
           description='The image is still loading while the motion.div is animating in.
         So the layout shifts mid-animation, making it feel like it"s "stuck" or stuttering — especially because the image has no defined height/width upfront.'
           reviewCount={97}
@@ -60,8 +60,8 @@ So the layout shifts mid-animation, making it feel like it"s "stuck" or stutteri
         />
         <RoomComponent
           Img={ThirdRoom}
-          category="Family Deluxe"
-          rate={2000}
+          category="Ac Dormatory(6 Pax)"
+          rate={3000}
           description='The image is still loading while the motion.div is animating in.
         So the layout shifts mid-animation, making it feel like it"s "stuck" or stuttering — especially because the image has no defined height/width upfront.'
           reviewCount={97}
