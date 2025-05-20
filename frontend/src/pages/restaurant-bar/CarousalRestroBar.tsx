@@ -3,10 +3,10 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 // Optimized Image URLs from Cloudinary
 const images: string[] = [
-  "https://res.cloudinary.com/dvc4zb2ha/image/upload/q_auto,f_auto,w_1600/v1747669565/pexels-bluerhinomedia-2788823_ssnekw.jpg",
-  "https://res.cloudinary.com/dvc4zb2ha/image/upload/q_auto,f_auto,w_1600/v1747669565/pexels-kelly-1179532-2796105_o8qvkd.jpg",
-  "https://res.cloudinary.com/dvc4zb2ha/image/upload/q_auto,f_auto,w_1600/v1747669565/pexels-pixabay-262918_r5zhmk.jpg",
-  "https://res.cloudinary.com/dvc4zb2ha/image/upload/q_auto,f_auto,w_1600/v1747669564/pexels-chanwalrus-941861_s26uvq.jpg",
+  "https://res.cloudinary.com/dvc4zb2ha/image/upload/c_limit,fl_lossy,q_auto,f_auto,w_1600/v1747669565/pexels-bluerhinomedia-2788823_ssnekw.jpg",
+  "https://res.cloudinary.com/dvc4zb2ha/image/upload/c_limit,fl_lossy,q_auto,f_auto,w_1600/v1747669565/pexels-kelly-1179532-2796105_o8qvkd.jpg",
+  "https://res.cloudinary.com/dvc4zb2ha/image/upload/c_limit,fl_lossy,q_auto,f_auto,w_1600/v1747669565/pexels-pixabay-262918_r5zhmk.jpg",
+  "https://res.cloudinary.com/dvc4zb2ha/image/upload/c_limit,fl_lossy,q_auto,f_auto,w_1600/v1747669564/pexels-chanwalrus-941861_s26uvq.jpg",
 ];
 
 const CarousalRestroBar: FC = () => {

@@ -1,6 +1,6 @@
 const vegData = [
   {
-    imgUrl: "img",
+    imgUrl: "https://ik.imagekit.io/hotelmahendra/panner%20cheese%20cottage.jpg?updatedAt=1747725172967",
     itemName: "Paneer Cheese Cottage",
 
     qty: "1 Bowl",
@@ -12,7 +12,7 @@ const vegData = [
     reviews: 1200,
   },
   {
-    imgUrl: "img",
+    imgUrl: "https://ik.imagekit.io/hotelmahendra/dal%20makhani.jpg?updatedAt=1747722848223",
     itemName: "Dal Makhani",
     qty: "1 Bowl",
     rate: "179",
@@ -23,7 +23,7 @@ const vegData = [
     reviews: 980,
   },
   {
-    imgUrl: "img",
+    imgUrl: "https://ik.imagekit.io/hotelmahendra/paneer%20butter%20masala.jpg?updatedAt=1747725101857",
     itemName: "Paneer Butter Masala",
     qty: "1 Bowl",
     rate: "189",
