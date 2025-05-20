@@ -10,8 +10,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "src"),
     },
   },
-  server: {
-    host: true, // or use '0.0.0.0'
-    port: 5173,
-  },
+  base: "/", // or '/your-repo-name/' if hosted in a subfolder
 });
