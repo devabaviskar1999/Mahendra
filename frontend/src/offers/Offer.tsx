@@ -46,7 +46,7 @@ export default function Offer() {
     <div
       className={` fixed z-50 font-sans bottom-3 right-3 p-2 md:p-4 rounded-xl bg-black text-white transition-all duration-300 ease-in-out shadow-lg ${
         toggle
-          ? "h-[62vh] w-[70vw] md:w-[20vw] md:h-[53vh] md:gap-6 flex flex-col gap-4 p-4"
+          ? "h-[62vh] w-[70vw] md:w-[20vw] md:h-[53vh] xl:h-[60vh] md:gap-2 flex flex-col gap-4 p-4"
           : buttonHide
           ? "hidden"
           : "w-52 h-auto flex-row gap-3 items-center cursor-pointer"
@@ -80,7 +80,7 @@ export default function Offer() {
         />
       </div>
       {toggle && (
-        <div className="flex flex-col items-center gap-2 md:gap-4 relative ">
+        <div className="flex flex-col items-center gap-2 md:gap-2 relative h-auto">
           <h3 className="md:text-xl md:font-semibold">Food & Bar section</h3>
           <div className="flex flex-row items-center justify-around w-full h-auto md:gap-2">
             <div
@@ -91,7 +91,7 @@ export default function Offer() {
                 src="https://ik.imagekit.io/hotelmahendra/paneer%20butter%20masala.jpg?updatedAt=1747725101857"
                 alt="food image"
                 loading="lazy"
-                className="h-24 w-55 transition-transform duration-300 ease-in-out hover:scale-110"
+                className="h-24 w-55  transition-transform duration-300 ease-in-out hover:scale-110"
               />
               <p>Food</p>
               <span className="text-[10px] text-red-600">Click to view</span>
