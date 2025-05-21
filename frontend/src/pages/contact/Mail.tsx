@@ -90,7 +90,7 @@ const Mail = () => {
           onClick={() =>
             setForm({ ...form, message: "I want to book a room for couple" })
           }
-          className="border-2 bg-gray-200 w-fit rounded-md p-1 cursor-pointer hover:bg-gray-300"
+          className="border-2 bg-gray-200 w-fit rounded-md p-1 cursor-pointer hover:bg-gray-300 active:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300 transition"
         >
           I want to book a room for couple
         </article>
@@ -98,7 +98,7 @@ const Mail = () => {
           onClick={() =>
             setForm({ ...form, message: "I have an event related query" })
           }
-          className="border-2 bg-gray-200 w-fit rounded-md p-1 cursor-pointer hover:bg-gray-300"
+          className="border-2 bg-gray-200 w-fit rounded-md p-1 cursor-pointer hover:bg-gray-300 active:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300 transition"
         >
           I have an event related query
         </article>
@@ -109,7 +109,7 @@ const Mail = () => {
               message: "I want to know about corporate booking",
             })
           }
-          className="border-2 bg-gray-200 w-fit rounded-md p-1 cursor-pointer hover:bg-gray-300"
+          className="border-2 bg-gray-200 w-fit rounded-md p-1 cursor-pointer hover:bg-gray-300 active:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300 transition"
         >
           I want to know about corporate booking
         </article>
