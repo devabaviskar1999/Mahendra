@@ -8,7 +8,7 @@ const Home = lazy(() => import("../pages/homeComponent/Home"));
 const View = lazy(() => import("../pages/View"));
 const Rooms = lazy(() => import("../pages/rooms/Rooms"));
 const Restaurant = lazy(() => import("../pages/restaurant-bar/RestaurantBar"));
-const Nearby = lazy(() => import("../pages/Nearby"));
+const Nearby = lazy(() => import("../pages/nearby/Nearby"));
 const Contact = lazy(() => import("../pages/contact/Contact"));
 const Gallery = lazy(() => import("../pages/Gallery"));
 const Hall = lazy(() => import("../pages/hall/Hall"));

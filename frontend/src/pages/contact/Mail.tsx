@@ -1,34 +1,37 @@
 import { useState } from "react";
+interface formType {
+  name: string;
+  number?: number;
+  message: string;
+}
 
 const Mail = () => {
-  const [form, setForm] = useState({
+  const [form, setForm] = useState<formType>({
     name: "",
-    email: "",
+    number: undefined,
     message: "",
   });
+
   const [credentialError, setCredentialError] = useState<boolean>(false);
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: name === "number" ? Number(value) : value });
     setCredentialError(false);
   };
 
   const handleSendEmail = () => {
-    if (
-      form.name.trim().length === 0 ||
-      form.email.trim().length === 0 ||
-      form.message.trim().length === 0
-    ) {
+    if (form.name.trim().length === 0 || form.message.trim().length === 0) {
       setCredentialError(true);
       return;
     } else {
       // Compose mailto link with subject and body from form
       const email = "hotelmahendra@gmail.com"; // Your email here
-      const subject = `Booking Inquiry from ${form.name}`;
+      const subject = `Booking Inquiry on website from ${form.name}`;
 
       // Construct body text with details
-      const body = `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`;
+      const body = `Name: ${form.name}\nMobile Number: ${form.number}\n\nMessage:\n${form.message}`;
 
       // Encode to be URL-safe
       const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
@@ -37,6 +40,18 @@ const Mail = () => {
 
       // Open default mail client
       window.location.href = mailtoLink;
+    }
+  };
+  const whatsappMessage = (): undefined => {
+    if (form.name.trim().length === 0 || form.message.trim().length === 0) {
+      setCredentialError(true);
+      return;
+    } else {
+      const phoneNumber = " +918087610947"; // Replace with your number (no + or spaces)
+      const message = form.message;
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+      window.location.href = whatsappLink;
     }
   };
 
@@ -53,11 +68,11 @@ const Mail = () => {
         required
       />
       <input
-        type="email"
-        name="email"
-        placeholder="Your Email"
+        type="number"
+        name="number"
+        placeholder="Your Contact Number"
         className="border p-2 rounded w-full mb-3 focus:outline-none focus:border-red-600"
-        value={form.email}
+        value={form.number}
         onChange={handleChange}
         required
       />
@@ -65,21 +80,61 @@ const Mail = () => {
         name="message"
         placeholder="Your Message"
         className="border p-2 rounded w-full mb-3 focus:outline-none focus:border-red-600"
-        rows={5}
+        rows={2}
         value={form.message}
         onChange={handleChange}
         required
       />
-      <button
-        onClick={handleSendEmail}
-        className="bg-red-600 text-white px-4 py-2 rounded-lg cursor-pointer hover:bg-blue-700 transition delay-100 ease-in-out"
-      >
-        Send Email
-      </button>
+      <div className="flex flex-col gap-1">
+        <article
+          onClick={() =>
+            setForm({ ...form, message: "I want to book a room for couple" })
+          }
+          className="border-2 bg-gray-200 w-fit rounded-md p-1 cursor-pointer hover:bg-gray-300"
+        >
+          I want to book a room for couple
+        </article>
+        <article
+          onClick={() =>
+            setForm({ ...form, message: "I have an event related query" })
+          }
+          className="border-2 bg-gray-200 w-fit rounded-md p-1 cursor-pointer hover:bg-gray-300"
+        >
+          I have an event related query
+        </article>
+        <article
+          onClick={() =>
+            setForm({
+              ...form,
+              message: "I want to know about corporate booking",
+            })
+          }
+          className="border-2 bg-gray-200 w-fit rounded-md p-1 cursor-pointer hover:bg-gray-300"
+        >
+          I want to know about corporate booking
+        </article>
+      </div>
+      <div className="flex flex-row gap-2">
+        <button
+          onClick={handleSendEmail}
+          className="bg-red-600 text-white px-4 py-2 rounded-lg cursor-pointer hover:bg-blue-700 transition delay-100 ease-in-out mt-3"
+        >
+          Send Email
+        </button>
+        <button
+          onClick={whatsappMessage}
+          className="
+      bg-green-400
+      text-black px-4 py-2 rounded-lg cursor-pointer  transition delay-100 ease-in-out mt-3 md:hidden
+      "
+        >
+          Send Whatsapp
+        </button>
+      </div>
 
       {credentialError && (
         <span className="text-red-600 ml-1 text-sm font-semibold border-b border-dashed border-red-600">
-          "All fields are required!!"
+          All fields are required!!
         </span>
       )}
     </div>
