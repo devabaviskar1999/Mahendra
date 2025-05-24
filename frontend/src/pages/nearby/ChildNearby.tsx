@@ -34,7 +34,7 @@ const ChildNearby = ({
   const [toggle, setToggle] = useState<boolean>(false);
 
   return (
-    <section className="border border-gray-300 rounded-2xl shadow-lg p-6 flex flex-col gap-6 bg-gradient-to-br from-white via-blue-50 to-white w-full max-w-4xl mx-auto transition-all duration-300">
+    <section className="border border-gray-300 rounded-2xl shadow-lg p-6 flex flex-col gap-3 lg:gap-6 bg-gradient-to-br from-white via-blue-50 to-white w-full max-w-4xl mx-auto transition-all duration-300">
       {/* Title */}
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-blue-700">
         {title} <span className="text-sm text-gray-500">({distance})</span>

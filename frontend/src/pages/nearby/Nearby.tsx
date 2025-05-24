@@ -3,7 +3,7 @@ import ScrollToTop from "../../scrollToTop/ScrollToTop";
 export default function Nearby() {
   return (
     <ScrollToTop>
-      <div className="min-h-screen w-full flex flex-col items-center p-2 gap-3 bg-gradient-to-br from-red-800 via-purple-800 to-black">
+      <div className="min-h-screen w-full flex flex-col items-center pt-2 gap-3 bg-gradient-to-br from-red-800 via-purple-800 to-black">
         <main className="min-h-screen w-full flex flex-col items-center p-2 gap-3">
           <ChildNearby
             mainImg="https://i.ibb.co/N22wDZVq/gettyimages-2139162010-612x612.jpg"
