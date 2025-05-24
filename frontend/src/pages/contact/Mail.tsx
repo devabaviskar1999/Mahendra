@@ -56,13 +56,13 @@ const Mail = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-4 mt-5">
-      <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+    <div className="max-w-md mx-auto p-4 mt-5 shadow shadow-gray-400 lg:p-8 lg:rounded-lg">
+      <h2 className="text-2xl font-bold mb-4 text-blue-600">Contact Us</h2>
       <input
         type="text"
         name="name"
         placeholder="Your Name"
-        className="border p-2 rounded w-full mb-3 focus:outline-none focus:border-red-600"
+        className="border p-2 rounded w-full mb-3 focus:outline-none focus:border-red-600 "
         value={form.name}
         onChange={handleChange}
         required

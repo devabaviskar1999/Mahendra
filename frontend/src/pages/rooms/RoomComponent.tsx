@@ -66,7 +66,7 @@ export default function RoomComponent({
             <span className="font-normal">Rate: </span>₹{rate} + Tax
           </span>
           <div className="flex flex-col-reverse xl:flex-row xl:justify-evenly">
-            <ul className="list-disc list-inside text-sm md:text-sm lg:text-base space-y-1">
+            <ul className="list-disc list-inside text-sm md:text-sm lg:text-base space-y-1 font-serif">
               <li>24 hrs checkout time</li>
               <li>Order food & drinks from your room</li>
               <li>All payment methods are accepted</li>

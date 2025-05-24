@@ -41,17 +41,17 @@ const ChildNearby = ({
       </h2>
 
       {/* Images */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="flex flex-col md:flex-row md:gap-2 md:justify-around">
         <img
           src={mainImg}
           alt={`${title} image`}
-          className="w-full h-60 object-cover rounded-xl border-2 border-blue-200"
+          className="w-[90%] h-50 md:w-full md:h-65 object-cover rounded-xl border-2 border-blue-200 mx-auto"
         />
         {secondaryImg && (
           <img
             src={secondaryImg}
             alt={`${title} secondary image`}
-            className="w-full h-60 object-cover rounded-xl border-2 border-green-200"
+            className="w-[80%] h-40 md:w-[40%] md:h-65 object-cover rounded-xl border-2 border-green-200 mx-auto"
           />
         )}
       </div>
@@ -103,7 +103,7 @@ const ChildNearby = ({
 
       {/* Toggle Button - Show More */}
       {!toggle && (
-        <div className="mx-auto text-blue-700 hover:text-blue-900 transition cursor-pointer">
+        <div className="mx-auto text-blue-700 hover:text-blue-900 transition cursor-pointer mt-[-20px]">
           <RiArrowDownWideFill size={32} onClick={() => setToggle(true)} />
         </div>
       )}
