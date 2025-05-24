@@ -7,10 +7,7 @@ export const MainViewImage: ImageType[] = [
     imgUrl: "https://i.ibb.co/7xvCJRTY/reception01.jpg",
     alt: "Hotel mahendra jalgaon reception01",
   },
-  {
-    imgUrl: "https://ibb.co/vCYm9ZM3",
-    alt: "Drinks image",
-  },
+
   {
     imgUrl: "https://i.ibb.co/sdkMrH3S/restaurant.jpg",
     alt: "Hotel mahendra jalgaon restaurant",
