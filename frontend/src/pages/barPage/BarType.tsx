@@ -70,7 +70,7 @@ const BarType = ({ id, title, targetId }: BarTypeProps) => {
 
       <button
         onClick={() => handleScroll(targetId)}
-        className="mt-8 px-4 py-2 border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black transition duration-200 ease-in-out text-sm sm:text-base"
+        className="mt-8 px-4 py-2 border bg-yellow-500 border-white text-black rounded-lg lg:rounded-md lg:border-yellow-500 lg:bg-black lg:text-yellow-500 lg:hover:bg-yellow-500 lg:hover:text-black transition lg:hover:cursor-pointer duration-300 ease-in-out"
       >
         Scroll to {targetId}
       </button>
